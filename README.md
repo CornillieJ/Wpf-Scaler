@@ -8,20 +8,14 @@ The class file calculates the necessary scaling factor based on the DPI of the p
 ## Installation Instructions
 1. **Choose Your Scaler File:** Select the appropriate scaler file based on your monitor's DPI setting and screen resolution.
 2. **Add to Your WPF Project:** Incorporate the chosen scaler file into your WPF project. Note that it cannot be added to a class library.
-3. **Install Newtonsoft.Json NuGet Package:** Ensure that your WPF project has the Newtonsoft.Json NuGet package installed. This package is required for the WPF Scaler to function properly.
-4. **Integrate with Your Window:** In the `Window_Loaded` event handler of your WPF window, add the following line of code: `Dpi.ScaleWpf(this);`.
-
+3. **Integrate with Your Window:** In the `Window_Loaded` event handler of your WPF window, add the following line of code: 
+    - `Dpi.ScaleWpf(this);`
 ## Options
 - **Scaler File Dpi72:** Suitable for programmers using older monitors with a lower resolution, such as 1280x1024, and a 19-inch screen.
-  - Calculated DPI: 72
 - **Scaler File Dpi96:** Designed for programmers working on a standard 1920x1080 resolution monitor with a 24-inch screen and 100% scaling.
-  - Calculated DPI: 96
 - **Scaler File Dpi120:** Intended for programmers working on a 1920x1080 resolution monitor with a 24-inch screen and 125% scaling.
-  - Calculated DPI: 120
 - **Scaler File Dpi144:** Ideal for programmers using high-DPI monitors with a 2560x1440 resolution, typically 27 inches in size.
-  - Calculated DPI: 144
 - **Scaler File Dpi192:** Tailored for programmers working on ultra-high-DPI monitors with a 3840x2160 resolution, commonly 27 inches or larger.
-  - Calculated DPI: 192
 
 Choose the scaler file that matches your monitor setup to achieve optimal results.
 

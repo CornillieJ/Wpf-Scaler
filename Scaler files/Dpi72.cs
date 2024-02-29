@@ -6,7 +6,6 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using Microsoft.Win32;
 using System.Runtime.InteropServices;
-using Newtonsoft.Json;
 using Application = System.Windows.Application;
 
 public static class Dpi
